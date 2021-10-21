@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,20 +16,20 @@
   <body>
     <div class="container">
       <section id="top-area-with-navbar">
-        <div class="navbar">
-          <button class="hamburger-menu">
-            <img
-              class="hamburger-icon"
-              src="/Room-Homepage/images/icon-hamburger.svg"
-              alt="hamburger"
-              srcset=""
-            />
-          </button>
-
-          <p class="name text-weight-700">room</p>
-
-          <nav class="active-navbar hidden">
-            <ul class="navbar-links">
+        <div class="header-area">
+          <div class="button-area">
+            <button class="hamburger">
+              <img
+                class="hamburger-icon"
+                src="/Room-Homepage/images/icon-hamburger.svg"
+                alt="hamburger-icon"
+                srcset=""
+              />
+            </button>
+          </div>
+          <h1 class="header text-weight-700">room</h1>
+          <nav class="navbar hidden">
+            <ul class="nav-links">
               <li><a href="#">home</a></li>
               <li><a href="#">shop</a></li>
               <li><a href="#">about</a></li>
@@ -38,7 +37,26 @@
             </ul>
           </nav>
         </div>
+        <div class="image-scroll">
+          <button class="left-arrow">
+            <img
+              src="/Room-Homepage/images/icon-angle-left.svg"
+              alt="left arrow"
+              srcset=""
+            />
+          </button>
+          <button class="right-arrow">
+            <img
+              src="/Room-Homepage/images/icon-angle-right.svg"
+              alt=""
+              srcset=""
+            />
+          </button>
+        </div>
       </section>
+      <div class="discover-section">
+        <h1 class="discover-header">Discover innovative ways to decorate</h1>
+      </div>
     </div>
     <script src="main.js"></script>
   </body>

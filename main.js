@@ -1,23 +1,23 @@
-"use strict";
-
-const hamburgerIcon = document.querySelector(".hamburger-icon");
-const activeNav = document.querySelector(".active-navbar");
+const hamburgerButton = document.querySelector(".hamburger-icon");
 const navbar = document.querySelector(".navbar");
-const header = document.querySelector(".name");
+const header = document.querySelector(".header");
+const headerArea = document.querySelector(".header-area");
 
-hamburgerIcon.addEventListener("click", toggleState);
+// hamburger menu functionality //
+hamburgerButton.addEventListener("click", press);
 
-function toggleState() {
-  if (activeNav.classList.contains("hidden")) {
-    console.log("kdfhnag");
-    activeNav.classList.toggle("hidden");
-    hamburgerIcon.src = "/Room-Homepage/images/icon-close.svg";
-    navbar.style.backgroundColor = "white";
+function press() {
+  if (navbar.classList.contains("hidden")) {
+    navbar.classList.toggle("hidden");
+    headerArea.style.backgroundColor = "white";
     header.style.display = "none";
+    navbar.style.display = "flex";
+    hamburgerButton.src = "/Room-Homepage/images/icon-close.svg";
   } else {
-    activeNav.classList.toggle("hidden");
-    hamburgerIcon.src = "/Room-Homepage/images/icon-hamburger.svg";
-    navbar.style.removeProperty("background-color");
+    navbar.classList.toggle("hidden");
+    headerArea.style.removeProperty("background-color");
+    navbar.style.display = "none";
     header.style.display = "flex";
+    hamburgerButton.src = "/Room-Homepage/images/icon-hamburger.svg";
   }
 }
