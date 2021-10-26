@@ -4,6 +4,7 @@ const hamburgerIcon = document.querySelector(".hamburger-icon");
 const header = document.querySelector(".top-picture-header");
 const hamburgerNavbar = document.querySelector(".hamburger-navbar");
 const navLinks = document.querySelector(".nav-links-mobile");
+
 let isOpen = false;
 
 // hamburger menu functionallity //

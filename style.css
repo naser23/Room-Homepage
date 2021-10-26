@@ -35,40 +35,35 @@ body {
 #top-area-with-navbar {
   width: 100%;
   height: 60%;
-  display: flex;
+  background: lightblue;
 }
 
 .top-picture {
   width: 60%;
   height: 100%;
-  background-image: url("/Room-Homepage/images/desktop-image-hero-1.jpg");
+  background: url(/Room-Homepage/images/desktop-image-hero-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.hamburger-navbar {
-  width: 60%;
-  height: 20%;
-  display: flex;
-}
-
-.hamburger-button {
-  display: none;
-}
-
-.hamburger-icon {
-  width: 30px;
-  height: 100%;
-}
-
 .top-picture-header {
-  /* height: 100%; */
-  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30%;
   color: white;
+}
+
+.hamburger-navbar {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.button-area {
+  display: none;
 }
 
 .nav-links {
@@ -84,11 +79,6 @@ body {
   text-decoration: none;
 }
 
-.nav-links-mobile li a {
-  text-decoration: none;
-  color: black;
-}
-
 .nav-links-mobile {
   width: 70%;
   list-style-type: none;
@@ -98,158 +88,131 @@ body {
   display: none;
 }
 
-/* // arrow buttons for image slider // */
-.image-scroll {
+.nav-links-mobile li a {
+  text-decoration: none;
+  color: black;
+}
+
+#bottom-area {
   width: 100%;
-  height: 3.5rem;
+  height: 40%;
+  background: lightgreen;
   display: flex;
-  justify-content: end;
 }
 
-.left-arrow {
-  width: 4rem;
-  background-color: black;
-  border: none;
+.bottom-chair-picture {
+  width: 30%;
+  height: 100%;
+  background: url(/Room-Homepage/images/image-about-dark.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.left-arrow:hover {
-  background: gray;
-}
-
-.right-arrow {
-  width: 4rem;
-  background-color: black;
-  border: none;
-}
-
-.right-arrow:hover {
-  background: gray;
-}
-
-/* // discover section of page // */
-.discover-section {
+.about-our-furniture {
   width: 40%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* padding: 0px 5%; */
 }
 
-.discover-main-area {
-  margin-top: 5%;
-  width: 70%;
-  height: 60%;
+.bottom-light-picture {
+  width: 30%;
+  height: 100%;
+  background: url(/Room-Homepage/images/image-about-light.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.discover-header {
-  font-size: 2.5rem;
-  padding-bottom: 30px;
-}
-
-.discover-paragraph {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: hsl(0, 0%, 63%);
-}
-
-.shop-now-area {
-  width: 70%;
-}
-
-.shop-now {
-  margin-top: 30px;
-  font-size: 1rem;
-  letter-spacing: 0.75rem;
-  border: none;
-  background: none;
-}
-
-.shop-now img {
-  padding-left: 20px;
-}
-
-.shop-now:hover {
-  color: gray;
-}
-
-@media screen and (max-width: 850px) and (max-height: 1025px) {
+@media screen and (max-width: 850px) {
   .container {
-    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    height: auto;
   }
   #top-area-with-navbar {
     width: 100%;
-    height: 800px;
-    background-position: 50% 50%;
-    display: flex;
-    flex-direction: column;
+    background: lightblue;
   }
 
   .top-picture {
     width: 100%;
-    height: 400px;
-  }
-
-  .top-picture-header {
-    font-size: 2rem;
+    height: 50vh;
+    background: url(/Room-Homepage/images/mobile-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .hamburger-navbar {
     width: 100%;
-    height: 25%;
+    height: 30%;
+    display: flex;
+    justify-content: start;
+  }
+
+  .top-picture-header {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
   }
 
   .button-area {
     width: 25%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .hamburger-button {
-    /* width: 30px;
-    height: 30px; */
-    display: block;
+    width: 25px;
+    height: 20px;
     border: none;
     background: none;
   }
 
-  .top-picture-header {
-    /* height: 100%; */
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .hamburger-icon {
+    width: 100%;
+    height: 100%;
   }
 
   .nav-links {
-    width: 75%;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     display: none;
   }
-
-  /* // discover section of page // */
   .discover-section {
-    /* padding-top: 20%; */
+    height: 50vh;
+    background: lightgreen;
+  }
+  #bottom-area {
     width: 100%;
-    height: 150px;
-
-    /* padding: 0px 10%; */
+    display: flex;
+    flex-direction: column;
+    background: lightgreen;
   }
 
-  .discover-main-area {
-    height: 50%;
-  }
-
-  .discover-header {
-    font-size: 2rem;
-  }
-
-  .shop-now-area {
+  .bottom-chair-picture {
     width: 100%;
+    height: 40vh;
+    background: url(/Room-Homepage/images/image-about-dark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .about-our-furniture {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .bottom-light-picture {
+    width: 100%;
+    height: 40vh;
+    background: url(/Room-Homepage/images/image-about-light.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
