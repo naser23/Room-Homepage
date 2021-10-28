@@ -4,7 +4,8 @@ const hamburgerIcon = document.querySelector(".hamburger-icon");
 const header = document.querySelector(".top-picture-header");
 const hamburgerNavbar = document.querySelector(".hamburger-navbar");
 const navLinks = document.querySelector(".nav-links-mobile");
-
+const leftSlider = document.querySelector(".left-slider");
+const rightSlider = document.querySelector(".right-slider");
 let isOpen = false;
 
 // hamburger menu functionallity //
@@ -25,3 +26,11 @@ function pressed() {
     isOpen = false;
   }
 }
+
+// beginning of image slider functionallity //
+leftSlider.addEventListener("click", function () {
+  console.log("left arrow pressed");
+});
+rightSlider.addEventListener("click", function () {
+  console.log("right arrow pressed");
+});

@@ -60,6 +60,10 @@ body {
   color: white;
 }
 
+.image-slider-mobile {
+  display: none;
+}
+
 .hamburger-navbar {
   width: 70%;
   height: 20%;
@@ -202,6 +206,11 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    /* // for image sliders // */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .hamburger-navbar {
@@ -243,6 +252,26 @@ body {
 
   .nav-links {
     display: none;
+  }
+
+  /* // image slider mobile styling // */
+  .image-slider-mobile {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 15%;
+  }
+
+  .left-slider {
+    width: 15%;
+    border: none;
+    background: black;
+  }
+
+  .right-slider {
+    width: 15%;
+    border: none;
+    background: black;
   }
 
   .discover-section {
