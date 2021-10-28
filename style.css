@@ -115,12 +115,12 @@ body {
 }
 
 .discover-header {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   padding-bottom: 20px;
 }
 
 .main-text {
-  line-height: 1.75rem;
+  line-height: 1.5rem;
 }
 
 .shop-now {
@@ -141,7 +141,6 @@ body {
 #bottom-area {
   width: 100%;
   height: 40%;
-  background: lightgreen;
   display: flex;
 }
 
@@ -157,6 +156,20 @@ body {
 .about-our-furniture {
   width: 40%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-furniture-inside-content {
+  width: 90%;
+  height: 70%;
+}
+
+.about-furniture-header {
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  padding-bottom: 20px;
 }
 
 .bottom-light-picture {
@@ -200,6 +213,7 @@ body {
 
   .top-picture-header {
     width: 50%;
+    font-size: 6vw;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -241,12 +255,12 @@ body {
 
   .discover-header {
     padding-bottom: 20px;
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
   .discover-inside-content {
     width: 80vw;
-    height: 70%;
+    height: 80%;
   }
 
   .main-text {
@@ -257,14 +271,13 @@ body {
   .shop-now {
     font-size: 2.5vh;
     display: flex;
-    letter-spacing: 5vw;
+    letter-spacing: 4vw;
   }
 
   #bottom-area {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: lightgreen;
   }
 
   .bottom-chair-picture {
@@ -279,6 +292,20 @@ body {
   .about-our-furniture {
     width: 100%;
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-furniture-header {
+    padding-bottom: 20px;
+    font-size: 4vw;
+    letter-spacing: 0.25rem;
+  }
+
+  .about-furniture-inside-content {
+    width: 80%;
+    height: 70%;
   }
 
   .bottom-light-picture {
@@ -295,11 +322,6 @@ body {
   .discover-inside-content {
     width: 80%;
     height: 80%;
-  }
-
-  .main-text {
-    font-size: 90%;
-    line-height: 1rem;
   }
 }
 
@@ -326,9 +348,28 @@ body {
 } */
 
 /* // (landscape mode) // */
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .discover-inside-content {
     width: 80%;
     height: 70%;
   }
-} */
+
+  .discover-header {
+    font-size: 1.5rem;
+  }
+
+  .about-furniture-header {
+    padding-bottom: 20px;
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+  }
+
+  .about-furniture-inside-content {
+    width: 80%;
+    height: 80%;
+  }
+
+  .main-text {
+    line-height: 1.25rem;
+  }
+}
