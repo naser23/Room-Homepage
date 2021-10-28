@@ -245,19 +245,19 @@ body {
   }
 
   .discover-inside-content {
-    width: 80%;
+    width: 80vw;
     height: 70%;
   }
 
   .main-text {
     font-size: 3.5vw;
-    line-height: 1.25rem;
+    line-height: 3vh;
   }
 
   .shop-now {
-    font-size: 1rem;
+    font-size: 2.5vh;
     display: flex;
-    letter-spacing: 0.75rem;
+    letter-spacing: 5vw;
   }
 
   #bottom-area {
@@ -291,7 +291,7 @@ body {
   }
 }
 
-/* @media screen and (max-height: 570px) {
+@media screen and (max-height: 570px) {
   .discover-inside-content {
     width: 80%;
     height: 80%;
@@ -301,12 +301,12 @@ body {
     font-size: 90%;
     line-height: 1rem;
   }
-} */
+}
 
 /* // SPECIFIC IPAD STYLING // */
 
 /* (portrait mode)  */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .main-text {
     line-height: 2rem;
   }
@@ -323,12 +323,12 @@ body {
   .top-picture-header {
     font-size: 2rem;
   }
-}
+} */
 
 /* // (landscape mode) // */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .discover-inside-content {
     width: 80%;
     height: 70%;
   }
-}
+} */
