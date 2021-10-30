@@ -33,372 +33,398 @@ body {
 
 .container {
   width: 100%;
-  height: 100vh;
-}
-
-/* // top half of the site // */
-#top-area-with-navbar {
-  width: 100%;
-  height: 60%;
-  display: flex;
-}
-
-.top-picture {
-  width: 60%;
   height: 100%;
-  background: url(/Room-Homepage/images/desktop-image-hero-1.jpg);
-  background-repeat: no-repeat;
+}
+
+/* // mobile first styling // */
+
+/* // top area with navbar // */
+/* // top picture with hamburger menu and image slider // */
+.top-picture {
+  width: 100%;
+  height: 50vh;
+  background: url(/Room-Homepage/images/mobile-image-hero-1.jpg);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-}
-
-.top-picture-header {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  color: white;
-}
-
-.image-slider-mobile {
-  display: none;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hamburger-navbar {
-  width: 70%;
-  height: 20%;
+  width: 100%;
+  height: 30%;
   display: flex;
-  justify-content: center;
 }
 
 .button-area {
-  display: none;
-}
-
-.nav-links {
-  width: 70%;
-  list-style-type: none;
+  width: 25%;
+  height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
-.nav-links li a {
+.hamburger-button {
+  border: none;
+  background: none;
+}
+
+.hamburger-icon {
+  width: 1.75rem;
+  height: 1.5rem;
+}
+
+.top-picture-header {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  text-decoration: none;
+}
+
+.nav-links {
+  display: none;
 }
 
 .nav-links-mobile {
-  width: 70%;
+  width: 75%;
+  height: 100%;
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   display: none;
 }
 
 .nav-links-mobile li a {
   text-decoration: none;
-  color: black;
 }
 
-/* // DESKTOP STYLING STARTS HERE // */
+.image-slider {
+  display: none;
+}
 
-/* // top right side of the site // */
+.image-slider-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.left-slider-mobile {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background: black;
+}
+
+.left-slider:hover {
+  background-color: hsl(0, 0%, 63%);
+}
+.right-slider:hover {
+  background-color: hsl(0, 0%, 63%);
+}
+
+.right-slider-mobile {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background: black;
+}
+
 .discover-section {
-  width: 40%;
-  height: 100%;
+  width: 100%;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .discover-inside-content {
-  width: 70%;
-  height: 60%;
+  width: 80%;
+  height: 80%;
 }
-
 .discover-header {
-  font-size: 2.5rem;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 1.75rem;
 }
 
 .main-text {
-  line-height: 1.5rem;
-}
-
-.shop-now {
   font-size: 1rem;
 }
 
-.shop-now:hover {
-  color: hsl(0, 0%, 63%);
-}
-
 .shop-now {
+  width: 100%;
   border: none;
   background: none;
-  letter-spacing: 1rem;
   padding-top: 20px;
+  letter-spacing: 1rem;
 }
 
-#bottom-area {
+/* // bottom area // */
+
+.bottom-dark-picture {
   width: 100%;
-  height: 40%;
-  display: flex;
-}
-
-.bottom-chair-picture {
-  width: 30%;
-  height: 100%;
+  height: 40vh;
   background: url(/Room-Homepage/images/image-about-dark.jpg);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .about-our-furniture {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-furniture-inside-content {
-  width: 90%;
-  height: 70%;
-}
-
-.about-furniture-header {
-  font-size: 1rem;
-  letter-spacing: 0.5rem;
-  padding-bottom: 20px;
+  width: 100%;
+  height: 50vh;
 }
 
 .bottom-light-picture {
-  width: 30%;
-  height: 100%;
+  width: 100%;
+  height: 50vh;
   background: url(/Room-Homepage/images/image-about-light.jpg);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* // MOBILE STYLING STARTS HERE // */
-@media screen and (max-width: 850px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  #top-area-with-navbar {
-    width: 100%;
-
-    display: block;
-    flex-direction: column;
-  }
-
-  .top-picture {
-    width: 100%;
-    height: 50vh;
-    background: url(/Room-Homepage/images/mobile-image-hero-1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    /* // for image sliders // */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .hamburger-navbar {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: start;
-  }
-
-  .top-picture-header {
-    width: 50%;
-    font-size: 6vw;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-
-  .button-area {
-    width: 25%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hamburger-button {
-    width: 25px;
-    height: 20px;
-    border: none;
-    background: none;
-  }
-
-  .hamburger-icon {
-    width: 100%;
-    height: 100%;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  /* // image slider mobile styling // */
-  .image-slider-mobile {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    height: 15%;
-  }
-
-  .left-slider {
-    width: 15%;
-    border: none;
-    background: black;
-  }
-
-  .right-slider {
-    width: 15%;
-    border: none;
-    background: black;
-  }
-
-  .discover-section {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* // very specific small phone styling (excluding iphone 5/SE). mainly for sizing of discover section.// */
+@media screen and (min-width: 320px) and (max-width: 360.98px) {
+  .discover-inside-content {
+    width: 90%;
+    height: 80%;
   }
 
   .discover-header {
-    padding-bottom: 20px;
-    font-size: 6vw;
-  }
-
-  .discover-inside-content {
-    width: 80vw;
-    height: 80%;
-  }
-
-  .main-text {
-    font-size: 3.5vw;
-    line-height: 3vh;
-  }
-
-  .shop-now {
-    font-size: 2.5vh;
-    display: flex;
-    letter-spacing: 4vw;
-  }
-
-  #bottom-area {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bottom-chair-picture {
-    width: 100%;
-    height: 40vh;
-    background: url(/Room-Homepage/images/image-about-dark.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .about-our-furniture {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about-furniture-header {
-    padding-bottom: 20px;
-    font-size: 4vw;
-    letter-spacing: 0.25rem;
-  }
-
-  .about-furniture-inside-content {
-    width: 80%;
-    height: 70%;
-  }
-
-  .bottom-light-picture {
-    width: 100%;
-    height: 40vh;
-    background: url(/Room-Homepage/images/image-about-light.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-@media screen and (max-height: 570px) {
-  .discover-inside-content {
-    width: 80%;
-    height: 80%;
-  }
-}
-
-/* // SPECIFIC IPAD STYLING // */
-
-/* (portrait mode)  */
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  .main-text {
-    line-height: 2rem;
-  }
-
-  .shop-now {
-    font-size: 1.25rem;
-    letter-spacing: 1.5rem;
-  }
-
-  .nav-links-mobile li {
+    padding-bottom: 10px;
     font-size: 1.5rem;
+  }
+
+  .shop-now {
+    padding-top: 10px;
+  }
+}
+
+/* // specific iphone 5/SE styling. mainly for sizing of discover section // */
+@media screen and (width: 320px) {
+  .discover-inside-content {
+    width: 90%;
+    height: 80%;
+  }
+  .main-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* // for mobile phone landscape // */
+@media screen and (min-width: 567.98px) {
+  .top-picture {
+    height: 100vh;
   }
 
   .top-picture-header {
     font-size: 2rem;
   }
-} */
 
-/* // (landscape mode) // */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  .discover-inside-content {
-    width: 80%;
-    height: 70%;
+  .nav-links-mobile {
+    font-size: 1.25rem;
   }
 
-  .discover-header {
+  .left-slider {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .right-slider {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .discover-section {
+    height: 100vh;
+  }
+
+  .bottom-dark-picture {
+    height: 100vh;
+  }
+
+  .about-our-furniture {
+    height: 100vh;
+  }
+
+  .bottom-light-picture {
+    height: 100vh;
+  }
+}
+
+/* // tablet portrait mode styling // */
+@media screen and (min-width: 767.98px) {
+  .top-picture {
+    height: 50vh;
+  }
+
+  .nav-links-mobile {
     font-size: 1.5rem;
   }
 
-  .about-furniture-header {
-    padding-bottom: 20px;
+  .left-slider-mobile {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .right-slider-mobile {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .discover-section {
+    height: 50vh;
+  }
+
+  .bottom-dark-picture {
+    height: 40vh;
+  }
+
+  .about-our-furniture {
+    height: 50vh;
+  }
+
+  .bottom-light-picture {
+    height: 40vh;
+  }
+}
+
+/* // tablet landscape mode // */
+@media screen and (min-width: 1024px) {
+  #top-area-with-navbar {
+    width: 100%;
+    height: 60%;
+    display: flex;
+  }
+
+  .top-picture {
+    height: 100%;
+    width: 60%;
+    /* background: url(/Room-Homepage/images/desktop-image-hero-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  }
+
+  .top-picture-header {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .discover-section {
+    width: 40%;
+    height: 100%;
+  }
+
+  #bottom-area {
+    width: 100%;
+    height: 40%;
+    display: flex;
+  }
+  .bottom-dark-picture {
+    width: 25%;
+    height: 100%;
+  }
+
+  .about-our-furniture {
+    width: 50%;
+    height: 100%;
+  }
+
+  .bottom-light-picture {
+    width: 25%;
+    height: 100%;
+  }
+
+  /* // getting rid of mobile only elements // */
+  .image-slider-mobile {
+    display: none;
+  }
+
+  .button-area {
+    display: none;
+  }
+
+  /* // inserting non mobile elements // */
+  .nav-links {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
     font-size: 1rem;
-    letter-spacing: 0.25rem;
+    color: white;
   }
 
-  .about-furniture-inside-content {
-    width: 80%;
-    height: 80%;
+  .image-slider {
+    display: flex;
   }
 
-  .main-text {
-    line-height: 1.25rem;
+  .left-slider {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background: black;
+  }
+
+  .right-slider {
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background: black;
+  }
+}
+
+/* // bigger phones landscape mode // */
+@media only screen and (min-device-width: 812px) and (max-device-width: 823px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .top-picture {
+    height: 100vh;
+  }
+
+  .top-picture-header {
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    font-size: 1.25rem;
+  }
+
+  .left-slider {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .right-slider {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .discover-section {
+    height: 100vh;
+  }
+
+  .bottom-dark-picture {
+    height: 100vh;
+  }
+
+  .about-our-furniture {
+    height: 100vh;
+  }
+
+  .bottom-light-picture {
+    height: 100vh;
   }
 }

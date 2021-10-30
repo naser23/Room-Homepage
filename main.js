@@ -4,8 +4,10 @@ const hamburgerIcon = document.querySelector(".hamburger-icon");
 const header = document.querySelector(".top-picture-header");
 const hamburgerNavbar = document.querySelector(".hamburger-navbar");
 const navLinks = document.querySelector(".nav-links-mobile");
-const leftSlider = document.querySelector(".left-slider");
-const rightSlider = document.querySelector(".right-slider");
+const leftSliderMobile = document.querySelector(".left-slider-mobile");
+const rightSliderMobile = document.querySelector(".right-slider-mobile");
+
+const topArea = document.querySelector("#top-area-with-navbar");
 let isOpen = false;
 
 // hamburger menu functionallity //
@@ -28,9 +30,9 @@ function pressed() {
 }
 
 // beginning of image slider functionallity //
-leftSlider.addEventListener("click", function () {
+leftSliderMobile.addEventListener("click", function () {
   console.log("left arrow pressed");
 });
-rightSlider.addEventListener("click", function () {
+rightSliderMobile.addEventListener("click", function () {
   console.log("right arrow pressed");
 });
