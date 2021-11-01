@@ -389,7 +389,7 @@ body {
 }
 
 /* // bigger phones landscape mode // */
-@media only screen and (min-device-width: 812px) and (max-device-width: 823px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 812px) and (max-device-width: 846.98px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .top-picture {
     height: 100vh;
   }
