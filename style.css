@@ -339,8 +339,9 @@ body {
   }
 
   .shop-now {
-    font-size: 1rem;
-    letter-spacing: 1rem;
+    font-size: 1.25rem;
+    letter-spacing: 1.25rem;
+    text-align: left;
   }
 
   .image-slider {
@@ -512,9 +513,24 @@ body {
 }
 
 /* // regular ipad landscape // */
-@media screen and (width: 1042px) and (height: 768px) {
+@media screen and (width: 1024px) and (height: 768px) {
   .discover-inside-content {
-    height: 80%;
+    height: 60%;
+    width: 80%;
+  }
+
+  .discover-header {
+    font-size: 1.75rem;
+  }
+
+  .main-text {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+
+  .shop-now {
+    font-size: 1rem;
+    letter-spacing: 1rem;
   }
 }
 
