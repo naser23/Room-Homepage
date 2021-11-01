@@ -188,34 +188,6 @@ body {
   background-size: cover;
 }
 
-/* // very specific small phone styling (excluding iphone 5/SE). mainly for sizing of discover section.// */
-@media screen and (min-width: 320px) and (max-width: 360.98px) {
-  .discover-inside-content {
-    width: 90%;
-    height: 80%;
-  }
-
-  .discover-header {
-    padding-bottom: 10px;
-    font-size: 1.5rem;
-  }
-
-  .shop-now {
-    padding-top: 10px;
-  }
-}
-
-/* // specific iphone 5/SE styling. mainly for sizing of discover section // */
-@media screen and (width: 320px) {
-  .discover-inside-content {
-    width: 90%;
-    height: 80%;
-  }
-  .main-text {
-    font-size: 0.85rem;
-  }
-}
-
 /* // for mobile phone landscape // */
 @media screen and (min-width: 567.98px) {
   .top-picture {
@@ -242,6 +214,14 @@ body {
 
   .discover-section {
     height: 100vh;
+  }
+
+  .discover-inside-content {
+    width: 70%;
+  }
+
+  .discover-header {
+    font-size: 2.5rem;
   }
 
   .bottom-dark-picture {
@@ -385,6 +365,44 @@ body {
     height: 4rem;
     border: none;
     background: black;
+  }
+}
+
+/* // specific phone styling // */
+
+/* // very specific small phone styling (excluding iphone 5/SE). mainly for sizing of discover section.// */
+/* // portrait mode // */
+@media screen and (min-width: 320px) and (max-width: 360.98px) {
+  .discover-inside-content {
+    width: 90%;
+    height: 80%;
+  }
+
+  .discover-header {
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  .shop-now {
+    padding-top: 10px;
+  }
+}
+
+/* // specific iphone 5/SE styling. mainly for sizing of discover section // */
+@media screen and (width: 320px) {
+  .discover-inside-content {
+    width: 90%;
+    height: 80%;
+  }
+  .main-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* // iphone 5/SE landscape mode // */
+@media screen and (width: 568px) and (height: 320px) {
+  .discover-header {
+    font-size: 2rem;
   }
 }
 
