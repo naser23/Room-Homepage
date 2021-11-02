@@ -121,13 +121,6 @@ body {
   background: black;
 }
 
-.left-slider:hover {
-  background-color: hsl(0, 0%, 63%);
-}
-.right-slider:hover {
-  background-color: hsl(0, 0%, 63%);
-}
-
 .right-slider-mobile {
   width: 4rem;
   height: 4rem;
@@ -162,6 +155,7 @@ body {
   background: none;
   padding-top: 20px;
   letter-spacing: 1rem;
+  text-align: left;
 }
 
 /* // bottom area // */
@@ -343,7 +337,7 @@ body {
 @media screen and (min-width: 1024px) {
   #top-area-with-navbar {
     width: 100%;
-    height: 60%;
+    height: 70%;
     display: flex;
   }
 
@@ -372,11 +366,18 @@ body {
   }
 
   .discover-inside-content {
-    height: 70%;
+    height: 60%;
   }
 
   .discover-header {
     font-size: 2.25rem;
+  }
+
+  .left-slider:hover {
+    background-color: hsl(0, 0%, 63%);
+  }
+  .right-slider:hover {
+    background-color: hsl(0, 0%, 63%);
   }
 
   .main-text {
@@ -385,7 +386,7 @@ body {
   }
 
   .shop-now {
-    font-size: 1.25rem;
+    font-size: 1rem;
     letter-spacing: 1.25rem;
     text-align: left;
   }
@@ -396,7 +397,7 @@ body {
 
   #bottom-area {
     width: 100%;
-    height: 40%;
+    height: 30%;
     display: flex;
   }
   .bottom-dark-picture {
@@ -427,7 +428,6 @@ body {
   .image-slider-mobile {
     display: none;
   }
-
   .button-area {
     display: none;
   }
@@ -458,6 +458,7 @@ body {
     height: 5rem;
     border: none;
     background: black;
+    transition: all 0.4s ease;
   }
 
   .right-slider {
@@ -465,6 +466,7 @@ body {
     height: 5rem;
     border: none;
     background: black;
+    transition: all 0.4s ease;
   }
 }
 
@@ -598,6 +600,13 @@ body {
     font-size: 1rem;
     letter-spacing: 1rem;
   }
+
+  .about-furniture-inside-content {
+    height: 70%;
+  }
+  .about-main-text {
+    font-size: 0.75rem;
+  }
 }
 
 /* // ipad pro styling (portrait mode) // */
@@ -704,7 +713,7 @@ body {
 
   .about-furniture-inside-content {
     width: 80%;
-    height: 80%;
+    height: 70%;
   }
 
   .about-furniture-header {
