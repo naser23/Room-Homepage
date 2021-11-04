@@ -52,19 +52,18 @@ rightSliderMobile.addEventListener("click", function () {
   console.log("right arrow pressed");
 });
 
+// components for creating discover elements //
 function discoverInsideContent() {
   let discoverInsideContent = document.querySelector(
     ".discover-inside-content"
   );
-  let header = discoverHeader(header2);
-  let mainText = discoverMainText(mainText2);
+  let header = discoverHeader(header1);
+  let mainText = discoverMainText(mainText1);
 
-  currentSlide(header, mainText);
-  discoverInsideContent.appendChild(discoverHeader(header1));
-  discoverInsideContent.appendChild(discoverMainText(mainText1));
+  discoverInsideContent.appendChild(header);
+  discoverInsideContent.appendChild(mainText);
   discoverInsideContent.appendChild(shopNowButton());
-
-  console.log(discoverInsideContent);
+  currentSlide(header, mainText);
 }
 
 discoverInsideContent();
@@ -107,7 +106,8 @@ function currentSlide(header, mainText) {
   let topPicture = document.querySelector(".top-picture");
   topPicture.style.backgroundImage =
     "url(/Room-Homepage/images/desktop-image-hero-2.jpg)";
-
+  // header.textContent = header3;
+  // mainText.textContent = mainText3;
   console.log(header, mainText);
 }
 currentSlide();
