@@ -8,8 +8,10 @@ const leftSliderMobile = document.querySelector(".left-slider-mobile");
 const rightSliderMobile = document.querySelector(".right-slider-mobile");
 const leftSlider = document.querySelector(".left-slider");
 const rightSlider = document.querySelector(".right-slider");
-
-const topArea = document.querySelector("#top-area-with-navbar");
+let topPicture = document.querySelector(".top-picture");
+const discoverHeader = document.querySelector(".discover-header");
+const mainText = document.querySelector(".main-text");
+let numCount = 0;
 let isOpen = false;
 
 // hamburger menu functionallity //
@@ -43,71 +45,85 @@ let header3 = "Manufactured with the best materials";
 let mainText3 =
   "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.";
 
+const backgroundImages = [
+  "/Room-Homepage/images/desktop-image-hero-1.jpg",
+  "/Room-Homepage/images/desktop-image-hero-2.jpg",
+  "/Room-Homepage/images/desktop-image-hero-3.jpg",
+];
+const backgroundImagesMobile = [
+  "/Room-Homepage/images/mobile-image-hero-1.jpg",
+  "/Room-Homepage/images/mobile-image-hero-2.jpg",
+  "/Room-Homepage/images/mobile-image-hero-3.jpg",
+];
+
+const headerArray = [header1, header2, header3];
+const mainTextArray = [mainText1, mainText2, mainText3];
+
 // beginning of image slider functionallity //
 // mobile //
-leftSliderMobile.addEventListener("click", function () {
-  console.log("left arrow pressed");
-});
-rightSliderMobile.addEventListener("click", function () {
-  console.log("right arrow pressed");
-});
+leftSliderMobile.addEventListener("click", previousSlideMobile);
+rightSliderMobile.addEventListener("click", currentSlideMobile);
 
-// components for creating discover elements //
-function discoverInsideContent() {
-  let discoverInsideContent = document.querySelector(
-    ".discover-inside-content"
-  );
-  let header = discoverHeader(header1);
-  let mainText = discoverMainText(mainText1);
+leftSlider.addEventListener("click", previousSlide);
+rightSlider.addEventListener("click", currentSlide);
 
-  discoverInsideContent.appendChild(header);
-  discoverInsideContent.appendChild(mainText);
-  discoverInsideContent.appendChild(shopNowButton());
-  currentSlide(header, mainText);
+// desktop slider functionality //
+function currentSlide() {
+  if (numCount < backgroundImages.length - 1) {
+    numCount++;
+    topPicture.style.backgroundImage = `url(${backgroundImages[numCount]})`;
+    discoverHeader.textContent = headerArray[numCount];
+    mainText.textContent = mainTextArray[numCount];
+    console.log(numCount);
+  } else {
+    numCount = 0;
+    topPicture.style.backgroundImage = `url(${backgroundImages[numCount]})`;
+    discoverHeader.textContent = headerArray[numCount];
+    mainText.textContent = mainTextArray[numCount];
+  }
 }
 
-discoverInsideContent();
-
-function discoverHeader(text) {
-  let header = document.createElement("h1");
-  header.classList.add("discover-header");
-  header.classList.add("text-weight-600");
-  header.textContent = text;
-  return header;
+function previousSlide() {
+  if (numCount == 0) {
+    numCount = 2;
+    topPicture.style.backgroundImage = `url(${backgroundImages[numCount]})`;
+    discoverHeader.textContent = headerArray[numCount];
+    mainText.textContent = mainTextArray[numCount];
+    console.log(numCount);
+  } else {
+    numCount--;
+    topPicture.style.backgroundImage = `url(${backgroundImages[numCount]})`;
+    discoverHeader.textContent = headerArray[numCount];
+    mainText.textContent = mainTextArray[numCount];
+  }
 }
 
-function discoverMainText(text) {
-  let mainText = document.createElement("p");
-  mainText.classList.add("main-text");
-  mainText.classList.add("gray");
-  mainText.textContent = text;
-  return mainText;
+// mobile slider functionality //
+function currentSlideMobile() {
+  if (numCount < backgroundImages.length - 1) {
+    numCount++;
+    topPicture.style.backgroundImage = `url(${backgroundImagesMobile[numCount]})`;
+    discoverHeader.textContent = headerArray[numCount];
+    mainText.textContent = mainTextArray[numCount];
+    console.log(numCount);
+  } else {
+    numCount = 0;
+    topPicture.style.backgroundImage = `url(${backgroundImagesMobile[numCount]})`;
+    discoverHeader.textContent = headerArray[numCount];
+    mainText.textContent = mainTextArray[numCount];
+  }
 }
 
-function shopNowButton() {
-  let button = document.createElement("button");
-  button.classList.add("shop-now");
-  button.classList.add("text-weight-600");
-  button.textContent = "SHOP NOW";
-
-  let img = shopNowImg();
-  button.appendChild(img);
-  return button;
+function previousSlideMobile() {
+  if (numCount == 0) {
+    numCount = 2;
+    topPicture.style.backgroundImage = `url(${backgroundImagesMobile[numCount]})`;
+    discoverHeader.textContent = headerArray[numCount];
+    mainText.textContent = mainTextArray[numCount];
+  } else {
+    numCount--;
+    topPicture.style.backgroundImage = `url(${backgroundImagesMobile[numCount]})`;
+    discoverHeader.textContent = headerArray[numCount];
+    mainText.textContent = mainTextArray[numCount];
+  }
 }
-
-function shopNowImg() {
-  let img = document.createElement("img");
-  img.classList.add("shop-now-img");
-  img.src = "/Room-Homepage/images/icon-arrow.svg";
-  return img;
-}
-
-function currentSlide(header, mainText) {
-  let topPicture = document.querySelector(".top-picture");
-  topPicture.style.backgroundImage =
-    "url(/Room-Homepage/images/desktop-image-hero-2.jpg)";
-  // header.textContent = header3;
-  // mainText.textContent = mainText3;
-  console.log(header, mainText);
-}
-currentSlide();
