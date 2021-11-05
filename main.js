@@ -74,7 +74,7 @@ function currentSlide() {
     topPicture.style.backgroundImage = `url(${backgroundImages[numCount]})`;
     discoverHeader.textContent = headerArray[numCount];
     mainText.textContent = mainTextArray[numCount];
-    console.log(numCount);
+    topPicture.classList.add("transition");
   } else {
     numCount = 0;
     topPicture.style.backgroundImage = `url(${backgroundImages[numCount]})`;
@@ -87,12 +87,14 @@ function previousSlide() {
   if (numCount == 0) {
     numCount = 2;
     topPicture.style.backgroundImage = `url(${backgroundImages[numCount]})`;
+    topPicture.classList.add("transition");
     discoverHeader.textContent = headerArray[numCount];
     mainText.textContent = mainTextArray[numCount];
     console.log(numCount);
   } else {
     numCount--;
     topPicture.style.backgroundImage = `url(${backgroundImages[numCount]})`;
+    topPicture.classList.add("transition");
     discoverHeader.textContent = headerArray[numCount];
     mainText.textContent = mainTextArray[numCount];
   }
@@ -103,12 +105,14 @@ function currentSlideMobile() {
   if (numCount < backgroundImages.length - 1) {
     numCount++;
     topPicture.style.backgroundImage = `url(${backgroundImagesMobile[numCount]})`;
+    topPicture.classList.add("transition");
     discoverHeader.textContent = headerArray[numCount];
     mainText.textContent = mainTextArray[numCount];
     console.log(numCount);
   } else {
     numCount = 0;
     topPicture.style.backgroundImage = `url(${backgroundImagesMobile[numCount]})`;
+    topPicture.classList.add("transition");
     discoverHeader.textContent = headerArray[numCount];
     mainText.textContent = mainTextArray[numCount];
   }

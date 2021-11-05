@@ -19,6 +19,10 @@
   color: hsl(0, 0%, 63%);
 }
 
+.transition {
+  transition: all 400ms ease;
+}
+
 /* // universal styling // */
 * {
   margin: 0;
@@ -366,7 +370,7 @@ body {
   }
 
   .discover-inside-content {
-    height: 60%;
+    height: 65%;
   }
 
   .discover-header {
