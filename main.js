@@ -60,7 +60,6 @@ const headerArray = [header1, header2, header3];
 const mainTextArray = [mainText1, mainText2, mainText3];
 
 // beginning of image slider functionallity //
-// mobile //
 leftSliderMobile.addEventListener("click", previousSlideMobile);
 rightSliderMobile.addEventListener("click", currentSlideMobile);
 
@@ -108,7 +107,6 @@ function currentSlideMobile() {
     topPicture.classList.add("transition");
     discoverHeader.textContent = headerArray[numCount];
     mainText.textContent = mainTextArray[numCount];
-    console.log(numCount);
   } else {
     numCount = 0;
     topPicture.style.backgroundImage = `url(${backgroundImagesMobile[numCount]})`;
