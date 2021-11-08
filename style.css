@@ -123,9 +123,6 @@ body {
   height: 4rem;
   border: none;
   background: black;
-  background-image: url(/Room-Homepage/images/icon-angle-left.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .right-slider-mobile {
@@ -133,9 +130,6 @@ body {
   height: 4rem;
   border: none;
   background: black;
-  background-image: url(/Room-Homepage/images/icon-angle-right.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .discover-section {
@@ -228,17 +222,11 @@ body {
   .left-slider {
     width: 5rem;
     height: 5rem;
-    background-image: url(/Room-Homepage/images/icon-angle-left.svg);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .right-slider {
     width: 5rem;
     height: 5rem;
-    background-image: url(/Room-Homepage/images/icon-angle-right.svg);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .discover-section {
@@ -302,9 +290,6 @@ body {
   .left-slider-mobile {
     width: 6rem;
     height: 6rem;
-    background-image: url(/Room-Homepage/images/icon-angle-left.svg);
-    background-position: center;
-    background-repeat: no-repeat;
   }
 
   .right-slider-mobile {
@@ -478,9 +463,6 @@ body {
     height: 5rem;
     border: none;
     background: black;
-    background-image: url(/Room-Homepage/images/icon-angle-left.svg);
-    background-position: center;
-    background-repeat: no-repeat;
     transition: all 0.4s ease;
   }
 
@@ -489,9 +471,6 @@ body {
     height: 5rem;
     border: none;
     background: black;
-    background-image: url(/Room-Homepage/images/icon-angle-right.svg);
-    background-position: center;
-    background-repeat: no-repeat;
     transition: all 0.4s ease;
   }
 }
